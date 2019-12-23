@@ -10,24 +10,22 @@ import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
 @SpringBootApplication
 public class KezuruApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(KezuruApplication.class, args);
 	}
 
-
-	@Bean
-	public ViewResolver viewResolver() {
-		ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
-		templateResolver.setTemplateMode("HTML");
-		templateResolver.setPrefix("static/"); //changed from view to static
-		templateResolver.setSuffix(".html");
-
-		SpringTemplateEngine engine = new SpringTemplateEngine();
-		engine.setTemplateResolver(templateResolver);
-
-		ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
-		viewResolver.setTemplateEngine(engine);
-		return viewResolver;
-	}
+//	@Bean
+//	public ViewResolver viewResolver() {
+//		ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
+//		templateResolver.setTemplateMode("HTML");
+//		templateResolver.setPrefix("static/"); //changed from view to static
+//		templateResolver.setSuffix(".html");
+//
+//		SpringTemplateEngine engine = new SpringTemplateEngine();
+//		engine.setTemplateResolver(templateResolver);
+//
+//		ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+//		viewResolver.setTemplateEngine(engine);
+//		return viewResolver;
+//	}
 }

@@ -20,7 +20,7 @@ public class HomePageController {
         entryService = theEntryService;
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/home")
     public String index (Model model) {
         List<Entry> latest3Entries = entryService.findLatest3();
         model.addAttribute("latest3entries", latest3Entries);
