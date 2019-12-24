@@ -124,7 +124,7 @@ xmlns:th="http://www.thymeleaf.org">
   <hr>
 
   <article th:each="p : ${latest3entries}">
-    <a href="featured-content.html">
+    <a th:href="@{/entries/showSelectedEntry/{id}/(id=${p.id})}">
       <h2 class="title" th:text="${p.title}">Post Title</h2>
       <div class="date">
         <i>Posted on</i>
