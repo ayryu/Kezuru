@@ -4,4 +4,4 @@
 A web application for collecting and sharing user-generated content about cooking techniques.  
 Kezuru was built using Java and the Spring Boot framework. 
 The database is managed using MySQL and uses Hibernate for ORM.  
-The view used a Bootstrap template and Thymeleaf.
+The view uses a Bootstrap template and Thymeleaf.
